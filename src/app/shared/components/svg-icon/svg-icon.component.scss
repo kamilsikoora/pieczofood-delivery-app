@@ -1,0 +1,23 @@
+@import 'theme';
+
+@mixin set-icon-color($color) {
+  fill: $color;
+}
+
+* {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.base {
+  @include set-icon-color($base-color);
+}
+
+.on-card {
+  @include set-icon-color($on-card-color);
+}
+
+.on-base {
+  @include set-icon-color($on-base-color);
+}
