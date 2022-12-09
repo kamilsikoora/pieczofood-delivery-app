@@ -8,5 +8,6 @@ import { SvgIconName } from '../../svg-icon/enums/svg-icon-name.enum';
 })
 export class RoundBtnComponent {
   @Input() icon?: SvgIconName;
+  @Input() iconSize? = '2em';
   @Input() text?: string;
 }
