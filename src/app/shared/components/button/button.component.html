@@ -1,0 +1,13 @@
+<app-svg-icon
+  class="main-icon"
+  *ngIf="mainIcon"
+  [name]="mainIcon"
+  [color]="iconColor"></app-svg-icon>
+
+<span class="label">{{ text }}</span>
+
+<app-svg-icon
+  class="action-icon"
+  *ngIf="actionIcon"
+  [name]="actionIcon"
+  [color]="iconColor"></app-svg-icon>
