@@ -1,0 +1,7 @@
+<ng-container *ngIf="icon; else withoutIcon">
+  <app-svg-icon class="icon" [name]="icon"></app-svg-icon>
+</ng-container>
+
+<ng-template #withoutIcon>
+  <span class="label">{{ text }}</span>
+</ng-template>
