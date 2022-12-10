@@ -1,0 +1,9 @@
+<div class="modal">
+  <div class="modal__header" *ngIf="title">
+    <h4 class="modal__header__text">{{ title }}</h4>
+  </div>
+
+  <div class="modal__content">
+    <ng-content></ng-content>
+  </div>
+</div>
