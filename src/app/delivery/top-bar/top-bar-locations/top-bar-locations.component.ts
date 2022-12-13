@@ -8,13 +8,13 @@ import { StandardBtnComponent } from 'src/app/shared/components/buttons/standard
 import { ModalComponent } from 'src/app/shared/components/modal/modal.component';
 
 @Component({
-  selector: 'app-top-bar-location',
+  selector: 'app-top-bar-locations',
   standalone: true,
   imports: [CommonModule, StandardBtnComponent, ModalComponent],
-  templateUrl: './top-bar-location.component.html',
-  styleUrls: ['./top-bar-location.component.scss'],
+  templateUrl: './top-bar-locations.component.html',
+  styleUrls: ['./top-bar-locations.component.scss'],
 })
-export class TopBarLocationComponent implements OnInit {
+export class TopBarLocationsComponent implements OnInit {
   MODAL_TITLE = 'Select restaurant location';
 
   locationIcon = {

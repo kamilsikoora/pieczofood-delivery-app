@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TopBarLogoComponent } from './top-bar-logo/top-bar-logo.component';
-import { TopBarLocationComponent } from './top-bar-location/top-bar-location.component';
+import { TopBarLocationsComponent } from './top-bar-locations/top-bar-locations.component';
 import { TopBarLanguagesComponent } from './top-bar-languages/top-bar-languages.component';
 
 @Component({
@@ -11,7 +11,7 @@ import { TopBarLanguagesComponent } from './top-bar-languages/top-bar-languages.
   imports: [
     CommonModule,
     TopBarLogoComponent,
-    TopBarLocationComponent,
+    TopBarLocationsComponent,
     TopBarLanguagesComponent,
   ],
   templateUrl: './top-bar.component.html',
