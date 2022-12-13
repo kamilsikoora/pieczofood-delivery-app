@@ -1,0 +1,9 @@
+<app-round-btn
+  [icon]="selectedLanguage.icon"
+  (click)="onLanguageBtn()"></app-round-btn>
+
+<app-modal [title]="MODAL_TITLE">
+  <ul>
+    <li *ngFor="let language of languages">{{ language.name | uppercase }}</li>
+  </ul>
+</app-modal>
