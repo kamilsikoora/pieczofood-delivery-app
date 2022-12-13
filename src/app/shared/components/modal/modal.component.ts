@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
+
 import { ModalService } from './modal.service';
 
 @Component({
   selector: 'app-modal',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.scss'],
 })

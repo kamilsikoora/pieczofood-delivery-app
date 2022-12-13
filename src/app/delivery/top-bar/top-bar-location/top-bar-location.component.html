@@ -1,0 +1,11 @@
+<app-standard-btn
+  [text]="selectedLocation | uppercase"
+  [mainIcon]="locationIcon.name"
+  [actionIcon]="moreIcon.name"
+  (click)="onLocationBtn()"></app-standard-btn>
+
+<app-modal [title]="MODAL_TITLE">
+  <ul>
+    <li *ngFor="let location of locations">{{ location | uppercase }}</li>
+  </ul>
+</app-modal>
