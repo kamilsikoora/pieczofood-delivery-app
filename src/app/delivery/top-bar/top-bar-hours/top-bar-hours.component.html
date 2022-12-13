@@ -1,0 +1,11 @@
+<app-standard-btn
+  [text]="selectedHour | uppercase"
+  [mainIcon]="timeIcon.name"
+  [actionIcon]="moreIcon.name"
+  (click)="onHoursBtn()"></app-standard-btn>
+
+<app-modal [title]="MODAL_TITLE">
+  <ul>
+    <li *ngFor="let hour of hours">{{ hour | uppercase }}</li>
+  </ul>
+</app-modal>

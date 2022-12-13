@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { TopBarLogoComponent } from './top-bar-logo/top-bar-logo.component';
 import { TopBarLocationsComponent } from './top-bar-locations/top-bar-locations.component';
 import { TopBarLanguagesComponent } from './top-bar-languages/top-bar-languages.component';
+import { TopBarHoursComponent } from './top-bar-hours/top-bar-hours.component';
 
 @Component({
   selector: 'app-top-bar',
@@ -13,6 +14,7 @@ import { TopBarLanguagesComponent } from './top-bar-languages/top-bar-languages.
     TopBarLogoComponent,
     TopBarLocationsComponent,
     TopBarLanguagesComponent,
+    TopBarHoursComponent,
   ],
   templateUrl: './top-bar.component.html',
   styleUrls: ['./top-bar.component.scss'],
