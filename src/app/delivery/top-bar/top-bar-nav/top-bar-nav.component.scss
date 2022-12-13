@@ -1,0 +1,25 @@
+@import 'theme';
+
+.nav {
+  display: flex;
+  gap: 0.5em;
+  margin: 0;
+  padding: 0.5em 0;
+  list-style: none;
+
+  &__item {
+    border-radius: 22px;
+    padding: 1em 2em;
+    font-size: 0.8em;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $surface-color;
+    }
+  }
+
+  &__active {
+    background-color: $base-color !important;
+    color: $on-base-color;
+  }
+}

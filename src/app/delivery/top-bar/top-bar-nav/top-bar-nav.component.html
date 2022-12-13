@@ -1,0 +1,9 @@
+<ul class="nav">
+  <li
+    class="nav__item"
+    [ngClass]="{ nav__active: item.id === activeItemId }"
+    *ngFor="let item of navItems"
+    (click)="onItemClick(item.id)">
+    {{ item.text | uppercase }}
+  </li>
+</ul>
