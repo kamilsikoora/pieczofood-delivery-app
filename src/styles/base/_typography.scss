@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+
+$roboto-font: 'Roboto', sans-serif;
+$rokkitt-font: 'Rokkitt', serif;
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: $roboto-font;
   font-size: 16px;
   margin: 0;
 }
@@ -39,5 +43,5 @@ p {
 
 .label {
   font-size: 0.8em;
-  font-weight: 400;
+  font-weight: 500;
 }
