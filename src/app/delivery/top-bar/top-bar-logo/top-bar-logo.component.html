@@ -1,0 +1,16 @@
+<div class="wrapper" (click)="onClick()">
+  <app-svg-icon
+    [name]="backIcon.name"
+    [color]="backIcon.color"
+    [size]="backIcon.size"></app-svg-icon>
+
+  <div class="logo">
+    <app-svg-icon
+      class="logo__icon"
+      [name]="logoIcon.name"
+      [color]="logoIcon.color"
+      [size]="logoIcon.size"></app-svg-icon>
+
+    <span class="logo__text">{{ BRAND_NAME | uppercase }}</span>
+  </div>
+</div>

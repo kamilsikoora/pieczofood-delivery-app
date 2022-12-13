@@ -5,9 +5,12 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { SvgIconName } from './enums/svg-icon-name.enum';
 import { environment } from '../../../../environments/environment';
 import { SvgIconColor } from './enums/svg-icon-color.enum';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-svg-icon',
+  standalone: true,
+  imports: [CommonModule],
   template: `
     <span [innerHTML]="iconHtml" [ngClass]="class" [ngStyle]="style"></span>
   `,
