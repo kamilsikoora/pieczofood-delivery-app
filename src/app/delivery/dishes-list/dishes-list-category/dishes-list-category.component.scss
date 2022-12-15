@@ -1,0 +1,55 @@
+@import 'theme';
+
+:host {
+  position: relative;
+  display: block;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+
+  &__name {
+    font-weight: 400;
+  }
+
+  &__description {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+  border-radius: 1em;
+  width: 100%;
+  height: 10em;
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.text--photo {
+  @extend .text;
+  position: absolute;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  display: flex;
+  border-radius: 1em;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(
+    0deg,
+    rgba(31, 11, 1, 0.7497373949579832) 0%,
+    rgba(128, 43, 1, 0.500437675070028) 50%,
+    rgba(247, 82, 0, 0.500437675070028) 100%
+  );
+  color: #fff;
+}

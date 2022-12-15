@@ -5,5 +5,6 @@ export enum SvgIconName {
   FlagUSA = 'flag-usa',
   Location = 'location',
   Logo = 'logo',
+  Photo = 'photo',
   Time = 'time',
 }

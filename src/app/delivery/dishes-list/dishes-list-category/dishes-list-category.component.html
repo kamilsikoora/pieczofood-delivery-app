@@ -1,0 +1,23 @@
+<ng-container *ngIf="image; then withPhoto; else withoutPhoto"></ng-container>
+
+<ng-template #withPhoto>
+  <div class="photo">
+    <img class="photo__img" src="../../../../assets/images/{{ image }}" />
+
+    <div class="text--photo">
+      <h3 class="text__name">{{ name }}</h3>
+      <p class="text__description" *ngIf="description">
+        {{ description }}
+      </p>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #withoutPhoto>
+  <div class="text">
+    <h3 class="text__name">{{ name }}</h3>
+    <p class="text__description" *ngIf="description">
+      {{ description }}
+    </p>
+  </div>
+</ng-template>
