@@ -1,0 +1,17 @@
+<div class="category" *ngFor="let dishCategory of dishCategories">
+  <app-dishes-list-category
+    class="category__header"
+    [name]="dishCategory.name"
+    [description]="dishCategory.description"
+    [image]="dishCategory.image"></app-dishes-list-category>
+
+  <ul class="category__dishes">
+    <li class="category__dishes__item" *ngFor="let dish of dishCategory.dishes">
+      <app-dishes-list-item
+        [name]="dish.name"
+        [ingredients]="dish.ingredients"
+        [price]="dish.price"
+        [image]="dish.image"></app-dishes-list-item>
+    </li>
+  </ul>
+</div>

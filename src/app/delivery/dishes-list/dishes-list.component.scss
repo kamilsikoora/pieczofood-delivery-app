@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  padding: 2em;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  &__dishes {
+    padding: 0 0 2em 0;
+    list-style: none;
+
+    &__item {
+      padding-bottom: 1em;
+    }
+  }
+}

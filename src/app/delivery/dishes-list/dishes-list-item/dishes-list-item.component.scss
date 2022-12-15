@@ -1,0 +1,60 @@
+@import 'theme';
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  border-radius: 1em;
+  padding: 1em;
+  background-color: $card-color;
+}
+
+.wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  min-width: 155px;
+  max-width: 155px;
+  max-height: 120px;
+  overflow: hidden;
+  background-color: $surface-color;
+
+  &__img {
+    height: 100%;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1em;
+  color: $on-card-color;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  &__ingredients {
+    height: 40px;
+    overflow: hidden;
+  }
+}
+
+.action {
+  padding: 1em;
+
+  &__icon {
+    display: block;
+    transform: rotate(180deg);
+  }
+}

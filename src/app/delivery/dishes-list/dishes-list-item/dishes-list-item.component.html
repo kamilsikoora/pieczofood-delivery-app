@@ -1,0 +1,31 @@
+<div class="wrapper">
+  <div class="photo">
+    <ng-container *ngIf="image; then isImage; else notImage"></ng-container>
+  </div>
+
+  <div class="info">
+    <div class="info__wrapper">
+      <h4 class="info__name">{{ name }}</h4>
+      <p class="info__ingredients">{{ ingredientsText }}</p>
+    </div>
+    <h4 class="info__price">{{ currency }}{{ price }}</h4>
+  </div>
+</div>
+
+<div class="action">
+  <app-svg-icon
+    class="action__icon"
+    [name]="actionIcon.name"
+    [color]="actionIcon.color"></app-svg-icon>
+</div>
+
+<ng-template #isImage>
+  <img class="photo__img" src="../../../../assets/images/{{ image }}" />
+</ng-template>
+
+<ng-template #notImage>
+  <app-svg-icon
+    [name]="photoIcon.name"
+    [color]="photoIcon.color"
+    [size]="photoIcon.size"></app-svg-icon>
+</ng-template>
